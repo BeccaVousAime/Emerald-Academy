@@ -122,7 +122,8 @@ HelloWorld.updateMyNumber(newNumber: myNewNumber)
  
  </li>
  </ol>
- <blockquote><b>Before and after changing my number**</b></blockquote>
+ <blockquote><b>Before and after changing my number</b></blockquote>
   <img src="https://github.com/BeccaVousAime/qu-est-submit-/blob/307ee45fc9fb5088de1b961210a7aef1ac7d70bc/Screenshots/Ch2Day2%20Script.png">
-  <img src="Screenshots/Ch2Day2 Script2.png">
+    <img src="https://github.com/BeccaVousAime/qu-est-submit-/blob/307ee45fc9fb5088de1b961210a7aef1ac7d70bc/Screenshots/Ch2Day2%20Script.png">
+
 
