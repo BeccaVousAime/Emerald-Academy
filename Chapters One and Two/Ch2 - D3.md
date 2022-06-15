@@ -28,7 +28,7 @@ log(socials)
   
   <li><b>Explain what the force unwrap operator ! does, with an example different from the one I showed you (you can just change the type).</b>
     <blockquote>
-  When you access values in a dictionary, it returns the value as an optional. This means that the value is either the type specified or nil. With the force unwrap operator, one can 'unwrap' the optional and display the actual type. This is useful if you know the value is definitely not nil; however, if you make an error and the value <i>is</i> nil, the program will crash.  
+  When you access values in a dictionary, it returns the value as an optional. This means that the value is either the type specified or nil. With the force unwrap operator, one can 'unwrap' the optional and display the actual value. This is useful if you know the value is definitely not nil; however, if you make an error and the value <i>is</i> nil, the program will crash.  
 <br>     </br>
 For the example above, if we use 'return' as shown below, its shows an error of "mismatched types. Expected UInt64, got UInt64?"  <br>     </br> 
        
@@ -53,5 +53,17 @@ return(socials["Instagram"])!
 
 }
    ```
-   
+   </blockquote>
    Now, the script will return the appropriate value of "6".
+   <br>     </br> 
+   <li><b>Using this picture below, explain...</b>
+
+What the error message means, why we're getting this error, and how to fix it?
+ <blockquote>As above, the error means that the type is an optional. We're getting this error, because String is used instead of String?. We fix this by unwrapping the type, as in the above example. 
+ </blockquote>
+ 
+ ```Cadence 
+ pub fun main(): String {
+let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
+return(thing[0x03])!
+}```
