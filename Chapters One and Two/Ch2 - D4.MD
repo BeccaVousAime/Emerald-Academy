@@ -53,17 +53,11 @@ transaction(twitter: String, instagram: String, discord: String, account: Addres
 }
 ```
 <li><b>Add a script to read the Struct:</b>
- 
- ```Cadence
+
+```Cadence 
 import Quest from 0x01
 
-transaction(twitter: String, instagram: String, discord: String, account: Address) {
-
-    prepare(signer: AuthAccount) {}
-
-    execute {
-        Quest.addProfile(twitter: twitter, instagram: instagram, discord: discord, account:account)
-        log("Socials Logged.")
-    }
-}
+pub fun main(account: Address): Quest.Profile {
+  return Quest.socials[account]!
+  }
  ```
