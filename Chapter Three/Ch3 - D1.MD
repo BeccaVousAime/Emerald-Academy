@@ -29,7 +29,7 @@
 
        pub fun createJacob(): Jacob { //We need to use @Jacob here since it is a resource
         let myJacob = Jacob() // You must use <- instead of = since it is a resource, and you have to specify create
-        return myJacob //You must either move or delete the resource here
+        return myJacob //You must either move or destroy the resource when you are done.
     }
 }
 ```
