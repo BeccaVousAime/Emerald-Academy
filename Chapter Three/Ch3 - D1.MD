@@ -6,7 +6,7 @@
    <blockquote>Three reasons structs are different than resources are that structs can be created whenever you want, they aren't as secure as resources, and they can be copied and overwritten.</blockquote>
      
 <li><b>Describe a situation where a resource might be better to use than a struct.</b>
-       <blockquote>A resource would be better utlitized when handling sensitive or important data that one never wants to replace or lose: for example, when handling NFTs. For example, if snomobeels wants to transfer me one of those ugly BAYC that are worth a bazillion dollars, using a struct would ensure that piece of data didn't happen to go missing because of some sort of error in coding.</blockquote>
+       <blockquote>A resource would be better utlitized when handling sensitive or important data that one never wants to replace or lose, such as when handling data for NFTs. For example, if snomobeels wants to transfer me one of those ugly BAYC that are worth a bazillion dollars, using a struct would ensure that piece of data didn't happen to go missing because of some sort of error in coding.</blockquote>
      <li><b>What is the keyword to make a new resource?</b>
        <blockquote>Create</blockquote>
           <li><b>Can a resource be created in a script or transaction (assuming there isn't a public function to create one)?</b>
