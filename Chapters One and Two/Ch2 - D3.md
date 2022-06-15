@@ -28,4 +28,30 @@ log(socials)
   
   <li><b>Explain what the force unwrap operator ! does, with an example different from the one I showed you (you can just change the type).</b>
     <blockquote>
-      The force unwrap operator ! 
+  When you access values in a dictionary, it returns the value as an optional. This means that the value is either the type specified or nil. With the force unwrap operator, one can 'unwrap' the optional and display the actual type. This is useful if you know the value is definitely not nil; however, if you make an error and the value <i>is</i> nil, the program will crash.  
+<br>     </br>
+For the example above, if we use 'return' as shown below, its shows an error of "mismatched types. Expected UInt64, got UInt64?"  <br>     </br> 
+       
+```Cadence
+pub fun main(): UInt64 {
+
+var socials: {String: UInt64} = 
+{"Facebook":2, "Instagram": 6, "Twitter": 4, "Youtube": 3, "Reddit": 5, "LinkedIn": 1}
+return(socials["Instagram"])
+
+}
+   ```     
+
+To fix this, we use the force unwrap and the script will execute:
+  
+   ```Cadence
+   pub fun main(): UInt64 {
+
+var socials: {String: UInt64} = 
+{"Facebook":2, "Instagram": 6, "Twitter": 4, "Youtube": 3, "Reddit": 5, "LinkedIn": 1}
+return(socials["Instagram"])!
+
+}
+   ```
+   
+   Now, the script will return the appropriate value of "6".
