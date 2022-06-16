@@ -12,7 +12,7 @@
           <li><b>Can a resource be created in a script or transaction (assuming there isn't a public function to create one)?</b>
        <blockquote>Nope!</blockquote>
                   <li><b>What is the type of the resource below?</b>
-       <blockquote>String</blockquote>
+       <blockquote>@Jacob</blockquote>
      <li><b>Let's play the "I Spy" game from when we were kids. I Spy 4 things wrong with this code. Please fix them.</b>
        
   ```Cadence 
